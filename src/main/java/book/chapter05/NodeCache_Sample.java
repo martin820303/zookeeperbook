@@ -25,9 +25,9 @@ public class NodeCache_Sample {
 		client.setData().forPath(path, "u".getBytes());
 		Thread.sleep(1000);
 		client.setData().forPath(path, "u2".getBytes());
-		Thread.sleep(10000);
+//		Thread.sleep(10000);
 		client.delete().deletingChildrenIfNeeded().forPath(path);
-		Thread.sleep(Integer.MAX_VALUE);
+//		Thread.sleep(Integer.MAX_VALUE);
 	}
 
 }

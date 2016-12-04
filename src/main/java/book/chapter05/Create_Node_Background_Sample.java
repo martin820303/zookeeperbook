@@ -39,10 +39,10 @@ public class Create_Node_Background_Sample {
 				System.out.println("Thread of processResult: "+Thread.currentThread().getName());
 				semaphore.countDown();
 			}
-		}).forPath(path, "init".getBytes());
+		}).forPath(path, "init123".getBytes());
 		semaphore.await();
 		tp.shutdown();
-		
+		Thread.sleep(Integer.MAX_VALUE);
 		
 		
 		
